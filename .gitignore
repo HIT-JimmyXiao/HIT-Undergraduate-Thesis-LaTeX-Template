@@ -20,6 +20,7 @@
 *.thm
 *.toc
 *.xdv
+thesis.ist
 
 # Generated PDFs can be rebuilt from source.
 *.pdf
@@ -30,4 +31,3 @@
 Thumbs.db
 .vscode/
 .idea/
-

@@ -890,8 +890,8 @@
     },
     section={
       afterindent=true,
-      beforeskip={\ifboolexpe{ bool {hit@harbin} and bool {hit@bachelor}}{9.75bp}{\ifhit@glue 19.84252bp \@plus 2.834646bp \@minus 0bp \else 19.84252bp \fi}},%上下空0.5行
-      afterskip={\ifboolexpe{ bool {hit@harbin} and bool {hit@bachelor}}{9.75bp}{\ifhit@glue 19.84252bp \@plus 2.834646bp \@minus 0bp \else 19.84252bp \fi}},
+      beforeskip={\ifboolexpe{ bool {hit@harbin} and bool {hit@bachelor}}{10.25197bp}{\ifhit@glue 19.84252bp \@plus 2.834646bp \@minus 0bp \else 19.84252bp \fi}},%哈尔滨本科二级标题上下各0.5行
+      afterskip={\ifboolexpe{ bool {hit@harbin} and bool {hit@bachelor}}{10.25197bp}{\ifhit@glue 19.84252bp \@plus 2.834646bp \@minus 0bp \else 19.84252bp \fi}},
       format={\hit@title@font\ifboolexpr{bool {hit@harbin} and bool {hit@bachelor}}{\fontsize{15bp}{18.75bp}\selectfont}{\ifhit@glue\fontsize{15bp}{21bp \@plus 1.677267bp \@minus 1.157391bp}\else\fontsize{15bp}{21bp}\fi\selectfont}},
       aftername=%
         {%
@@ -906,8 +906,8 @@
     },
     subsection={
       afterindent=true,
-      beforeskip={\ifboolexpe{ bool {hit@harbin} and bool {hit@bachelor}}{9.75bp}{\ifhit@glue 17.00787bp \@plus 2.834646bp \@minus 0bp \else 17.00787bp \fi}},
-      afterskip={\ifboolexpe{ bool {hit@harbin} and bool {hit@bachelor}}{9.75bp}{\ifhit@glue 17.00787bp \@plus 2.834646bp \@minus 0bp \else 17.00787bp \fi}},
+      beforeskip={\ifboolexpe{ bool {hit@harbin} and bool {hit@bachelor}}{10.25197bp}{\ifhit@glue 17.00787bp \@plus 2.834646bp \@minus 0bp \else 17.00787bp \fi}},
+      afterskip={\ifboolexpe{ bool {hit@harbin} and bool {hit@bachelor}}{10.25197bp}{\ifhit@glue 17.00787bp \@plus 2.834646bp \@minus 0bp \else 17.00787bp \fi}},
       format={\hit@title@font\ifboolexpr{bool {hit@harbin} and bool {hit@bachelor}}{\fontsize{14bp}{17.5bp}\selectfont}{\ifhit@glue\fontsize{14bp}{18bp \@plus 1.842609bp \@minus 0.9920497bp}\else\fontsize{14bp}{18bp}\fi\selectfont}},
       aftername=%
         {%
