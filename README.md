@@ -5,20 +5,48 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/HIT-JimmyXiao/HIT-Undergraduate-Thesis-LaTeX-Template"><img alt="Repository" src="https://img.shields.io/badge/GitHub-HIT--Undergraduate--Thesis--LaTeX--Template-181717?logo=github"></a>
-  <img alt="TeX Live" src="https://img.shields.io/badge/TeX%20Live-XeLaTeX-008080?logo=latex">
-  <img alt="HIT" src="https://img.shields.io/badge/HIT-Undergraduate%20Thesis-1f4f8f">
-  <img alt="Status" src="https://img.shields.io/badge/Status-Word%20example%20aligned-success">
+  <em>A clean, reproducible and HIT-style LaTeX template for undergraduate thesis writing.</em>
 </p>
 
-本项目是在 [hithesis/hithesis](https://github.com/hithesis/hithesis) 基础上整理的哈尔滨工业大学本科毕业论文（设计）LaTeX 模板，面向哈尔滨校区本科毕设写作场景。当前版本重点对齐新版《本科毕业论文（设计）书写范例（理工类）》的视觉习惯，保留 `hithesis` 的核心类文件、参考文献样式和封面生成逻辑，并对本科生常用排版细节做了默认化处理。
+<p align="center">
+  <a href="https://github.com/HIT-JimmyXiao/HIT-Undergraduate-Thesis-LaTeX-Template">
+    <img alt="GitHub Repository" src="https://img.shields.io/badge/GitHub-HIT--Undergraduate--Thesis--LaTeX--Template-181717?logo=github">
+  </a>
+  <img alt="TeX Live" src="https://img.shields.io/badge/TeX%20Live-XeLaTeX-008080?logo=latex">
+  <img alt="HIT" src="https://img.shields.io/badge/HIT-Undergraduate%20Thesis-1f4f8f">
+  <img alt="Template Status" src="https://img.shields.io/badge/Status-Format%20Aligned-success">
+  <img alt="Maintainer" src="https://img.shields.io/badge/Maintainer-HIT--Jimmy-blueviolet">
+</p>
 
-维护者：`HIT_Jimmy`  
-联系邮箱：`2023112881@stu.hit.edu.cn`
+---
 
+## Overview
+
+本项目是在 [hithesis/hithesis](https://github.com/hithesis/hithesis) 基础上整理的 **哈尔滨工业大学本科毕业论文（设计）LaTeX 模板**，面向哈尔滨校区本科毕业论文、毕业设计和课程论文式长文档写作场景。
+
+当前版本重点参考新版《本科毕业论文（设计）书写范例（理工类）》的版式习惯，对本科生最常遇到的封面、扉页、摘要、目录、图表、公式、参考文献和附录排版进行了整理与默认化配置，在尽量保留 `hithesis` 核心类文件、参考文献样式和封面生成逻辑的基础上，使模板更适合直接写作、修改和提交。
+
+## Features
+
+- **HIT-style layout**：对齐哈尔滨工业大学本科毕业论文（设计）常用版式习惯；
+- **XeLaTeX workflow**：基于 TeX Live / XeLaTeX，适合中文论文排版；
+- **Structured thesis writing**：支持封面、扉页、摘要、目录、正文、参考文献、声明页、致谢和附录；
+- **Clean visual defaults**：优化中英文混排、图题表题、页眉页脚和常见浮动体显示；
+- **Reproducible writing pipeline**：适合本科毕设、科研训练、课程论文和模板二次开发。
+
+## Maintainer
+
+本模板由 **HIT_Jimmy** 整理维护。维护者本科背景为 **哈尔滨工业大学大数据管理与应用**，后续研究方向聚焦于数据科学、人工智能与交叉学科应用。
+
+- Email: `2023112881@stu.hit.edu.cn`
+- Repository: [HIT-Undergraduate-Thesis-LaTeX-Template](https://github.com/HIT-JimmyXiao/HIT-Undergraduate-Thesis-LaTeX-Template)
+
+## Acknowledgement
+
+本项目基于 [hithesis/hithesis](https://github.com/hithesis/hithesis) 进行整理与适配。感谢原项目作者和社区对哈尔滨工业大学 LaTeX 论文模板生态的长期贡献。
 ## 项目定位
 
-这个仓库适合希望用 LaTeX 完成哈工大本科毕业论文（设计）的同学使用。它不是从零重写的模板，而是一个面向本科毕设场景的可编译整理版：
+这个仓库适合希望用 LaTeX 完成哈工大本科毕业论文（设计）的同学使用，一个面向本科毕设场景的可编译整理版：
 
 - 默认使用 `type=bachelor,campus=harbin`，适配哈尔滨校区本科论文。
 - 默认使用 Windows 字体集，贴近学校 Word 范例的宋体/黑体环境。
@@ -101,28 +129,7 @@ HIT-Undergraduate-Thesis-LaTeX-Template/
 - 参考文献改动后需要运行 BibTeX 或使用 `latexmk -xelatex` 自动处理。
 - 不建议提交 `.aux`、`.log`、`.toc`、`.out`、`.bbl`、`.blg` 等编译生成文件。
 
-## Git 提交流程
 
-如果你已经在 GitHub 创建了空仓库，可以在本目录执行：
-
-```powershell
-git init
-git add .
-git commit -m "Initial release: HIT undergraduate thesis LaTeX template"
-git branch -M main
-git remote add origin https://github.com/HIT-JimmyXiao/HIT-Undergraduate-Thesis-LaTeX-Template.git
-git push -u origin main
-```
-
-如果远程仓库已经有内容，先执行：
-
-```powershell
-git remote add origin https://github.com/HIT-JimmyXiao/HIT-Undergraduate-Thesis-LaTeX-Template.git
-git pull origin main --allow-unrelated-histories
-git add .
-git commit -m "Add HIT undergraduate thesis LaTeX template"
-git push -u origin main
-```
 
 ## 致谢
 
