@@ -16,7 +16,16 @@
 %      `\\//`   \\   \./    \\ /     //    \\./   \\   //   \\ |/ /
 %     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[fontset=windows,type=bachelor,campus=harbin]{hithesisbook}
+\newif\ifhitusewindowsfontset
+\IfFileExists{C:/Windows/Fonts/simsun.ttc}{\hitusewindowsfontsettrue}{\hitusewindowsfontsetfalse}
+\ifdefined\hitforcefandol
+  \hitusewindowsfontsetfalse
+\fi
+\ifhitusewindowsfontset
+  \documentclass[fontset=windows,type=bachelor,campus=harbin]{hithesisbook}
+\else
+  \documentclass[fontset=fandol,type=bachelor,campus=harbin]{hithesisbook}
+\fi
 % 此处选项中不要有空格
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 必填选项

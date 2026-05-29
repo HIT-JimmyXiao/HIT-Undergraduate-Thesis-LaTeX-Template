@@ -73,7 +73,7 @@ xelatex thesis.tex
 xelatex thesis.tex
 ```
 
-Overleaf 用户可以直接上传整个项目目录，并将主文件设置为 `thesis.tex`，编译器选择 `XeLaTeX`。
+Overleaf 用户可以直接上传整个项目目录，并将主文件设置为 `main.tex` 或 `thesis.tex`，编译器选择 `XeLaTeX`。当前入口文件会自动检测 Windows 中易字体；若检测不到，则自动切换到 `fontset=fandol`，避免 Overleaf 上出现 `SimSun/SimHei/KaiTi/FangSong` 缺字报错。
 
 ## 目录结构
 
@@ -116,7 +116,8 @@ HIT-Undergraduate-Thesis-LaTeX-Template/
 
 与原始 `hithesis` 示例相比，本整理版重点做了以下本科毕设友好调整：
 
-- `thesis.tex` 默认设置为 `fontset=windows,type=bachelor,campus=harbin`。
+- `thesis.tex` 默认优先使用 `fontset=windows,type=bachelor,campus=harbin`；若系统中不存在 Windows 中易字体，则自动回退到 `fontset=fandol`，便于 Overleaf 直接编译。
+- 新增 `main.tex` 轻量入口文件，兼容 Overleaf 默认以 `main.tex` 作为主文件的用法。
 - 目录中“第1章  绪论”类章标题条目取消原有固定宽编号盒，编号与标题之间仅保留约两个半角空格。
 - 哈尔滨本科二级标题和三级标题上下间距按正文半行距设置，即前后各 `10.25197bp`。
 - 公式示例不在公式上方额外留空白段落，避免 Word 范例中不存在的空行感。
@@ -128,7 +129,7 @@ HIT-Undergraduate-Thesis-LaTeX-Template/
 
 ## 编译注意
 
-- Windows 本地建议保留 `fontset=windows`；如果在 Linux 或 Overleaf 编译，可尝试切换为 `fontset=fandol` 或根据平台安装中文字体。
+- Windows 本地会自动使用 `fontset=windows`；Linux 或 Overleaf 若无中易字体，将自动回退到 `fontset=fandol`，一般不需要手动改入口文件。若平台默认寻找 `main.tex`，可直接以仓库内新增的 `main.tex` 作为主文件。
 - 图片建议优先使用 PDF、EPS 或高分辨率 PNG，并放入 `figures/`。
 - 参考文献改动后需要运行 BibTeX 或使用 `latexmk -xelatex` 自动处理。
 - 不建议提交 `.aux`、`.log`、`.toc`、`.out`、`.bbl`、`.blg` 等编译生成文件。
