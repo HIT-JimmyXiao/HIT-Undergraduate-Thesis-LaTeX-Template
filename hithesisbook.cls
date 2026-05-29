@@ -1738,6 +1738,7 @@
     \begingroup
       \parindent \z@ \rightskip \@pnumwidth
       \parfillskip -\@pnumwidth
+      \def\numberline##1{##1\hspace{1em}\ignorespaces}%
       \leavevmode
       \advance\leftskip\@tempdima
       \hskip -\leftskip
